@@ -5,8 +5,8 @@ const Navbar = () => {
   const { status, data } = useSession();
   const handleLogout = () => {
     signOut();
-    console.log("Fired From Navbar, status: ", status);
-    console.log("Data from navbar: ", data);
+    // console.log("Fired From Navbar, status: ", status);
+    // console.log("Data from navbar: ", data);
   };
   return (
     <div className="navbar bg-base-300 rounded-xl">

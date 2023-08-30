@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const HomePage = ({ users }) => {
   const router = useRouter();
   const { status } = useSession();
-  console.log(`Session status: `, status);
+  // console.log(`Session status: `, status);
 
   useEffect(() => {
     if (status === "unauthenticated") {
@@ -17,7 +17,7 @@ const HomePage = ({ users }) => {
 
   return (
     <div>
-      <h1>Users Page</h1>
+      <h1 className="my-3 text-3xl font-bold">Current Users</h1>
       <table className="table">
         <thead>
           <tr>
