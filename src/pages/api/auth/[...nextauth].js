@@ -13,7 +13,7 @@ export const authOptions = {
         const { username, password } = credentials;
 
         const adminResponse = await fetch(
-          "http://localhost:3000/api/auth/getAdmin?username=" + username
+          `${process.env.DEPLOYMENT_URL}/api/auth/getAdmin?username=` + username
         );
         const admin = await adminResponse.json();
 
