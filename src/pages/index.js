@@ -144,7 +144,7 @@ HomePage.getLayout = function getLayout(page) {
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${process.env.DEPLOYMENT_URL}/api/allUsers`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/allUsers`);
   const users = await res.json();
   // console.log(users);
   return {

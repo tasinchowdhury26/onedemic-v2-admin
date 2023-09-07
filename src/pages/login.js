@@ -91,9 +91,9 @@ const LoginPage = () => {
         </div>
       ) : (
         <div className="flex justify-center items-center h-screen">
-          <div className="gap-3 flex">
-            <span className="loading loading-ring loading-lg"></span>
-            <h1 className="text-white text-4xl font-bold">Already Logged In</h1>
+          <div className="gap-3 flex backdrop-blur-xl bg-white/30 p-14 rounded-3xl">
+            <h1 className="text-white text-4xl font-bold">Please Wait</h1>
+            <span className="loading loading-dots loading-lg text-white"></span>
           </div>
         </div>
       )}
